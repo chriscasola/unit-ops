@@ -1,0 +1,30 @@
+{
+  "name": "unit-ops",
+  "version": "0.0.0",
+  "description": "Javascript library for converting and performing operations on units",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Error: no build specified\" && exit 1"
+  },
+  "keywords": [
+    "unit",
+    "conversion",
+    "quantity"
+  ],
+  "author": {
+    "name": "Chris Casola",
+    "email": "chriscasola@gmail.com",
+    "url": "https://github.com/chriscasola"
+  },
+  "license": "MIT",
+  "bugs": "https://github.com/chriscasola/unit-ops/issues",
+  "homepage": "https://github.com/chriscasola/unit-ops",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chriscasola/unit-ops.git"
+  }
+}
