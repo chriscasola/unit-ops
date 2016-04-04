@@ -7,7 +7,7 @@
     "node": ">=4.0.0"
   },
   "scripts": {
-    "test": "xo",
+    "test": "xo && ava",
     "build": "echo \"Error: no build specified\" && exit 1"
   },
   "keywords": [
@@ -28,9 +28,19 @@
     "url": "https://github.com/chriscasola/unit-ops.git"
   },
   "devDependencies": {
+    "ava": "^0.13.0",
     "xo": "^0.13.0"
   },
   "xo": {
     "esnext": "true"
+  },
+  "ava": {
+    "files": [
+      "**/*.spec.js"
+    ],
+    "source": [
+      "**/*.js",
+      "!**/*.spec.js"
+    ]
   }
 }
