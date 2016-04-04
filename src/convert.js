@@ -1,6 +1,8 @@
+'use strict';
+
 import units from './units';
 
-module.exports = function convert(fromUnit, toUnit, quantity) {
+export default function convert(fromUnit, toUnit, quantity) {
 	const from = units[fromUnit];
 	const to = units[toUnit];
 
@@ -9,4 +11,4 @@ module.exports = function convert(fromUnit, toUnit, quantity) {
 	}
 
 	return (quantity / from.ratio) * to.ratio;
-};
+}
