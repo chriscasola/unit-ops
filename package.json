@@ -7,7 +7,7 @@
     "node": ">=4.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "xo",
     "build": "echo \"Error: no build specified\" && exit 1"
   },
   "keywords": [
@@ -26,5 +26,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/chriscasola/unit-ops.git"
+  },
+  "devDependencies": {
+    "xo": "^0.13.0"
+  },
+  "xo": {
+    "esnext": "true"
   }
 }
