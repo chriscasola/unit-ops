@@ -1,5 +1,7 @@
 'use strict';
 
 module.exports = {
-	Quantity: function Quantity() {}
+	quantity: function quantity(a = 1) {
+		return a;
+	}
 };
