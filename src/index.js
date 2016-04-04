@@ -1,7 +1,7 @@
 'use strict';
 
+import convert from './convert';
+
 module.exports = {
-	quantity: function quantity(a = 1) {
-		return a;
-	}
+	convert
 };

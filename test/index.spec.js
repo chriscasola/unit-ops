@@ -1,16 +1,8 @@
 'use strict';
 
-import unitOps from '../src/';
 import test from 'ava';
+import unitOps from '../src/';
 
-test('exports a wuantity function', t => {
-	t.ok(typeof unitOps.quantity === 'function');
-});
-
-test('quantity returns 1 by default', t => {
-	t.is(unitOps.quantity(), 1);
-});
-
-test('quantity returns the first argument', t => {
-	t.is(unitOps.quantity(2), 2);
+test('exports a convert function', t => {
+	t.ok(typeof unitOps.convert === 'function');
 });
