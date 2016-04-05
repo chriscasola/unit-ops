@@ -3,6 +3,7 @@
 import test from 'ava';
 import convert from '../src/convert';
 
+// volume
 test('cup', t => {
 	t.is(convert('cup', 'pint', 4), 2);
 	t.is(convert('pint', 'cup', 2), 4);
@@ -38,6 +39,23 @@ test('teaspoon', t => {
 	t.is(convert('cup', 'teaspoon', 0.5), 24);
 });
 
+// weight
+test('gram', t => {
+	t.is(convert('gram', 'ounce', 60), 2.1);
+	t.is(convert('ounce', 'gram', 15), 425);
+});
+
+test('ounce', t => {
+	t.is(convert('ounce', 'gram', 15), 425);
+	t.is(convert('gram', 'ounce', 60), 2.1);
+});
+
+test('pound', t => {
+	t.is(convert('pound', 'ounce', 2), 32);
+	t.is(convert('ounce', 'pound', 32), 2);
+});
+
+// errors
 test('throws when no common base unit', t => {
 	t.throws(convert.bind(null, 'tablespoon', 'pound', 2), 'no common base unit');
 });

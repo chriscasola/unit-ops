@@ -14,5 +14,16 @@ export default function convert(fromUnit, toUnit, quantity) {
 		throw new Error('no quantity specified');
 	}
 
-	return (quantity / from.ratio) * to.ratio;
+	let result = (quantity / from.ratio) * to.ratio;
+
+	if (to.precision !== undefined) {
+		result = round(result, to.precision);
+	}
+
+	return result;
+}
+
+function round(num, digits) {
+	const factor = Math.pow(10, digits);
+	return Math.round(num * factor) / factor;
 }

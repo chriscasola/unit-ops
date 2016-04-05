@@ -60,6 +60,24 @@ const units = {
 	},
 
 	// weight
+	gram: {
+		base: 'pound',
+		names: [
+			/^gram(s)*|g$/
+		],
+		ratio: 453.59237,
+		type: 'weight',
+		precision: 0
+	},
+	ounce: {
+		base: 'pound',
+		names: [
+			/^ounce(s)*|oz$/
+		],
+		ratio: 16,
+		type: 'weight',
+		precision: 1
+	},
 	pound: {
 		base: 'pound',
 		names: [
