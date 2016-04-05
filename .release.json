@@ -1,6 +1,6 @@
 {
 	"pkgFiles": ["package.json"],
-	"increment": "patch",
+	"increment": "minor",
 	"commitMessage": "chore: release %s",
 	"tagName": "%s",
 	"tagAnnotation": "Release %s",
@@ -8,14 +8,9 @@
 	"changelogCommand": "./node_modules/.bin/conventional-changelog -p angular",
 	"requireCleanWorkingDir": true,
 	"src": {
-		"pushRepo": "origin"
+		"pushRepo": "git@github.com:chriscasola/unit-ops.git"
 	},
 	"npm": {
 		"publish": true
-	},
-	"github": {
-		"release": true,
-		"releaseName": "Release %s",
-		"tokenRef": "GITHUB_TOKEN"
 	}
 }
