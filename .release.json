@@ -1,0 +1,21 @@
+{
+	"pkgFiles": ["package.json"],
+	"increment": "patch",
+	"commitMessage": "chore: release %s",
+	"tagName": "%s",
+	"tagAnnotation": "Release %s",
+	"buildCommand": "npm run build",
+	"changelogCommand": "./node_modules/.bin/conventional-changelog -p angular",
+	"requireCleanWorkingDir": true,
+	"src": {
+		"pushRepo": "origin"
+	},
+	"npm": {
+		"publish": true
+	},
+	"github": {
+		"release": true,
+		"releaseName": "Release %s",
+		"tokenRef": "GITHUB_TOKEN"
+	}
+}
