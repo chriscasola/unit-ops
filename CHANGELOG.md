@@ -1,3 +1,13 @@
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/chriscasola/unit-ops/compare/0.2.0...v0.3.0) (2016-04-05)
+
+
+### Features
+
+* **convert:** throw an error if a quantity is not provided ([4bf1d7a](https://github.com/chriscasola/unit-ops/commit/4bf1d7a))
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2016-04-05)
 
