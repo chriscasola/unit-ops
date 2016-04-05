@@ -5,10 +5,10 @@
 	"tagName": "%s",
 	"tagAnnotation": "Release %s",
 	"buildCommand": "npm run build",
-	"changelogCommand": "./node_modules/.bin/conventional-changelog -p angular",
 	"requireCleanWorkingDir": true,
 	"src": {
-		"pushRepo": "git@github.com:chriscasola/unit-ops.git"
+		"pushRepo": "git@github.com:chriscasola/unit-ops.git",
+		"beforeStageCommand": "./node_modules/.bin/conventional-changelog -p angular -i CHANGELOG.md -s"
 	},
 	"npm": {
 		"publish": true
