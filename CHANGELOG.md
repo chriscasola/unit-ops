@@ -1,3 +1,13 @@
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/chriscasola/unit-ops/compare/0.3.0...0.4.0) (2016-04-05)
+
+
+### Features
+
+* **convert:** add two more weight units ([ac80915](https://github.com/chriscasola/unit-ops/commit/ac80915))
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/chriscasola/unit-ops/compare/0.2.0...0.3.0) (2016-04-05)
 
