@@ -2,7 +2,7 @@
 	"pkgFiles": ["package.json"],
 	"increment": "minor",
 	"commitMessage": "chore: release %s",
-	"tagName": "%s",
+	"tagName": "v%s",
 	"tagAnnotation": "Release %s",
 	"buildCommand": "npm run build",
 	"requireCleanWorkingDir": true,
