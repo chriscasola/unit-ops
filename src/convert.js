@@ -10,5 +10,9 @@ export default function convert(fromUnit, toUnit, quantity) {
 		throw new Error('no common base unit');
 	}
 
+	if (quantity === undefined) {
+		throw new Error('no quantity specified');
+	}
+
 	return (quantity / from.ratio) * to.ratio;
 }

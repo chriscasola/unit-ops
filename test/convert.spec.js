@@ -41,3 +41,7 @@ test('teaspoon', t => {
 test('throws when no common base unit', t => {
 	t.throws(convert.bind(null, 'tablespoon', 'pound', 2), 'no common base unit');
 });
+
+test('throws when no quantity is provided', t => {
+	t.throws(convert.bind(null, 'tablespoon', 'cup'), 'no quantity specified');
+});
